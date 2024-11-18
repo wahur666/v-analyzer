@@ -25,6 +25,7 @@ module lsp
 // response: []DocumentHighlight | none
 // request: TextDocumentPositionParams
 pub struct DocumentHighlight {
+pub:
 	range Range
 	kind  DocumentHighlightKind
 }

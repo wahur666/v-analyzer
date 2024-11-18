@@ -24,6 +24,7 @@ module lsp
 // method: ‘window/showMessage’
 // notification
 pub struct ShowMessageParams {
+pub:
 	@type MessageType
 	// @type int
 	message string
@@ -40,6 +41,7 @@ pub enum MessageType {
 // method: ‘window/showMessageRequest’
 // response: MessageActionItem | none / null
 pub struct ShowMessageRequestParams {
+pub:
 	@type   MessageType
 	message string
 	actions []MessageActionItem
@@ -52,6 +54,7 @@ pub struct MessageActionItem {
 // method: ‘window/logMessage’
 // notification
 pub struct LogMessageParams {
+pub:
 	@type   MessageType
 	message string
 }

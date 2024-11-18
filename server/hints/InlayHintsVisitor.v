@@ -27,6 +27,7 @@ import analyzer.psi
 import analyzer.psi.types
 
 pub struct InlayHintsVisitor {
+pub:
 	cfg config.InlayHintsConfig
 pub mut:
 	lines  int

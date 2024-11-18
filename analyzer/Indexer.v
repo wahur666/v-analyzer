@@ -154,6 +154,7 @@ pub fn (mut i Indexer) rename_file(old_path string, new_path string) ?index.File
 					'new_path': new_path
 					'err':      err.str()
 				}).error('Failed to rename file')
+				continue
 			}
 		}
 	}
@@ -170,6 +171,7 @@ pub fn (mut i Indexer) remove_file(path string) ?index.FileIndex {
 					'path': path
 					'err':  err.str()
 				}).error('Failed to remove file')
+				continue
 			}
 		}
 	}
